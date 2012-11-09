@@ -30,10 +30,10 @@ All participants will receive a limited edition [Coderwall](http://www.coderwall
 
 We have a number of awesome judges who graciously volunteered to take a look at all the entries!
 
-* [David Czarnecki](http://twitter.com/CzarneckiD), Lead Engineer at Agora Games
-* [Eric Preisz](https://twitter.com/epreisz), CEO of GarageGames
-* [Matt Hackett](https://twitter.com/#!/richtaur), Co-founder of Lost Decade Games
-* [Lee Reilly](http://twitter.com/leereilly), Gamer Dad and Software Developer at GitHub
+* [David Czarnecki](http://twitter.com/CzarneckiD), Lead Engineer at Agora Games.
+* [Eric Preisz](https://twitter.com/epreisz), CEO of GarageGames.
+* [Matt Hackett](https://twitter.com/#!/richtaur), Co-founder of Lost Decade Games.
+* [Lee Reilly](http://twitter.com/leereilly), Gamer Dad and Software Developer at GitHub.
 * [Romana Ramzan](https://twitter.com/Manak/), Denki's Player Champion. PhD Researcher. Organiser of Scottish Game Jam.
 
 ## Rules
