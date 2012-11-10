@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{00D1817F-3DA0-4BE8-8728-C0B4D5C905B2}") = "go_unity", "Assembly-CSharp.csproj", "{4E2C9A76-EAD0-9BC1-8C42-4DCE8EC15A59}"
+Project("{00D1817F-3DA0-4BE8-8728-C0B4D5C905B2}") = "go_unity", "Assembly-Boo.booproj", "{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4E2C9A76-EAD0-9BC1-8C42-4DCE8EC15A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E2C9A76-EAD0-9BC1-8C42-4DCE8EC15A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E2C9A76-EAD0-9BC1-8C42-4DCE8EC15A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E2C9A76-EAD0-9BC1-8C42-4DCE8EC15A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+							GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -35,4 +35,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal

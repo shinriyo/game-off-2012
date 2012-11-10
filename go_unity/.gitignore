@@ -1,11 +1,7 @@
 .DS_Store
 *.swp
-android/bin/*
-android/gen
-android/proguard.cfg
-android/local.properties
-go_unity/Library/*
-go_unity/Temp
+Library/*
+Temp
 !EditorBuildSettings.asset
 !InputManager.asset
 !ProjectSettings.asset
