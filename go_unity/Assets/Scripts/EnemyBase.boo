@@ -1,6 +1,6 @@
 import UnityEngine
 
-class Enemy (MonoBehaviour):
+class EnemyBase (MonoBehaviour):
 
     def Start ():
         pass

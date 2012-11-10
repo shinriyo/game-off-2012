@@ -1,6 +1,6 @@
 import UnityEngine
 
-class Player (MonoBehaviour):
+class PlayerBase (MonoBehaviour):
 
     def Start ():
         pass

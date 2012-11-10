@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\EnemyBase.boo" />
+     <Compile Include="Assets\Scripts\Megaman.boo" />
      <Compile Include="Assets\Scripts\PlayerBase.boo" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
