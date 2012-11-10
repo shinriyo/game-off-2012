@@ -4,8 +4,8 @@ android/bin/*
 android/gen
 android/proguard.cfg
 android/local.properties
-unity/Library/*
-unity/Temp
+go_unity/Library/*
+go_unity/Temp
 !EditorBuildSettings.asset
 !InputManager.asset
 !ProjectSettings.asset
