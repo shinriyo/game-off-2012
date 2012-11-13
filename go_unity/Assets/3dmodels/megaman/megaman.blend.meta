@@ -1,9 +1,15 @@
 fileFormatVersion: 2
-guid: da789657c1d5c487fa2494356672f60e
+guid: 6e85f53dd6a0d4f54b2baa7a73ffb098
 ModelImporter:
   fileIDToRecycleName:
     4300000: Body
     7400000: Default Take //// megaman
+    7400002: ArmatureAction //// megaman
+    7400004: Idle //// megaman
+    7400006: Jump //// megaman
+    7400008: Pull //// megaman
+    7400010: Push //// megaman
+    7400012: Walk //// megaman
   serializedVersion: 10
   materials:
     importMaterials: 1
