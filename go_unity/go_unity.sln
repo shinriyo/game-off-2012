@@ -1,7 +1,9 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "Assembly-Boo", "Assembly-Boo.booproj", "{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}"
+# Visual Studio 2008
+
+Project("{00D1817F-3DA0-4BE8-8728-C0B4D5C905B2}") = "go_unity", "Assembly-CSharp-firstpass.csproj", "{67A974B3-D3A4-906D-61E2-283424FBD000}"
+EndProject
+Project("{00D1817F-3DA0-4BE8-8728-C0B4D5C905B2}") = "go_unity", "Assembly-Boo.booproj", "{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67A974B3-D3A4-906D-61E2-283424FBD000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A974B3-D3A4-906D-61E2-283424FBD000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A974B3-D3A4-906D-61E2-283424FBD000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A974B3-D3A4-906D-61E2-283424FBD000}.Release|Any CPU.Build.0 = Release|Any CPU
 		{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33FBC89A-0C21-DBDD-4F73-4C87DDEFBE91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+			GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-Boo.booproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -39,7 +48,5 @@ Global
 		$4.inheritsScope = text/plain
 		$4.scope = text/x-boo
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
+
 EndGlobal

@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerBase.boo">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Megaman.boo">
     <Files>
-      <File FileName="Assets/Scripts/Megaman.boo" Line="4" Column="1" />
-      <File FileName="Assets/Scripts/PlayerBase.boo" Line="5" Column="5" />
+      <File FileName="Assets/Scripts/Megaman.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerBase.boo" Line="9" Column="5" />
       <File FileName="Assets/Scripts/EnemyBase.boo" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

@@ -1,20 +1,24 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{00D1817F-3DA0-4BE8-8728-C0B4D5C905B2}") = "go_unity", "Assembly-CSharp-firstpass-vs.csproj", "{67A974B3-D3A4-906D-61E2-283424FBD000}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{67A974B3-D3A4-906D-61E2-283424FBD000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A974B3-D3A4-906D-61E2-283424FBD000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A974B3-D3A4-906D-61E2-283424FBD000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A974B3-D3A4-906D-61E2-283424FBD000}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-												GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
+				GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-Boo.booproj
 		Policies = $0
 		$0.TextStylePolicy = $1
 		$1.inheritsSet = null
@@ -30,6 +34,13 @@ Global
 		$3.inheritsSet = Mono
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
+		$0.TextStylePolicy = $4
+		$4.FileWidth = 120
+		$4.RemoveTrailingWhitespace = True
+		$4.EolMarker = Unix
+		$4.inheritsSet = VisualStudio
+		$4.inheritsScope = text/plain
+		$4.scope = text/x-boo
 	EndGlobalSection
 
 EndGlobal
