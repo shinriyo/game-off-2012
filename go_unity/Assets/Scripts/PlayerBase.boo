@@ -3,11 +3,15 @@ import UnityEngine
 [RequireComponent(CharacterController)]
 class PlayerBase (MonoBehaviour):
 
-    private _hp as int
-    private gravity as single = 20.0F
+    protected _hp as int
+    protected _gravity as single
+    protected _speed as single
+    protected _rotateSpeed as single
     private moveDirection as Vector3 = Vector3.zero
     static final IDLE as string = "Idle"
     static final WALK as string = "Walk"
+    static final PULL as string = "Pull"
+    static final PUSH as string = "Push"
 
     def Start ():
         animation.Play(IDLE)
@@ -21,15 +25,15 @@ class PlayerBase (MonoBehaviour):
 
         controller = GetComponent(CharacterController)
         moveDirection = Vector3.zero
-        moveDirection.y -= gravity * Time.deltaTime
+        moveDirection.y -= _gravity * Time.deltaTime
 
         if Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.5:
             inputH = true
-            transform.eulerAngles.y += Input.GetAxis("Horizontal")
+            transform.eulerAngles.y += Input.GetAxis("Horizontal") * Time.deltaTime * _rotateSpeed
 
         if (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.5):
             inputV = true
-            moveDirection += transform.forward
+            moveDirection += transform.forward * Input.GetAxis("Vertical") * _speed
 
         controller.Move(moveDirection * Time.deltaTime);
 
