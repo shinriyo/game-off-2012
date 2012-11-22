@@ -44,6 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ArrestKeeper.boo" />
      <Compile Include="Assets\Scripts\CubeFactory.boo" />
      <Compile Include="Assets\Scripts\EnemyBase.boo" />
      <Compile Include="Assets\Scripts\GameMain.boo" />

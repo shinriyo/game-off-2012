@@ -7,6 +7,7 @@ class PlayerBase (MonoBehaviour):
     protected _gravity as single
     protected _speed as single
     protected _rotateSpeed as single
+
     private moveDirection as Vector3 = Vector3.zero
     static final IDLE as string = "Idle"
     static final WALK as string = "Walk"
