@@ -2,7 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameMain.boo">
     <Files>
-      <File FileName="Assets/Scripts/GameMain.boo" Line="21" Column="18" />
+      <File FileName="Assets/Scripts/GameMain.boo" Line="20" Column="18" />
+      <File FileName="Assets/Scripts/JailFactory.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Plaers/PlayerBase.boo" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,6 +12,7 @@
           <Node name="Assembly-Boo" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
+                <Node name="Plaers" expanded="True" />
                 <Node name="GameMain.boo" selected="True" />
               </Node>
             </Node>
