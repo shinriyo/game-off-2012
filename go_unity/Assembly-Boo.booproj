@@ -46,11 +46,15 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ArrestKeeper.boo" />
      <Compile Include="Assets\Scripts\CubeFactory.boo" />
-     <Compile Include="Assets\Scripts\EnemyBase.boo" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyBase.boo" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyLink.boo" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyMario.boo" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyMegaman.boo" />
      <Compile Include="Assets\Scripts\GameMain.boo" />
      <Compile Include="Assets\Scripts\HUD.boo" />
-     <Compile Include="Assets\Scripts\Megaman.boo" />
-     <Compile Include="Assets\Scripts\PlayerBase.boo" />
+     <Compile Include="Assets\Scripts\JailFactory.boo" />
+     <Compile Include="Assets\Scripts\Plaers\Megaman.boo" />
+     <Compile Include="Assets\Scripts\Plaers\PlayerBase.boo" />
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
