@@ -61,7 +61,9 @@
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Shaders\Vegetation-TwoPassUnlit.shader" />
      <None Include="Assets\Standard Assets\Gem Rendering\diamond shader.shader" />
+     <None Include="Assets\Shaders\alpha_2sided.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
