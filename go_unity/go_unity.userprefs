@@ -2,9 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameMain.boo">
     <Files>
-      <File FileName="Assets/Scripts/GameMain.boo" Line="23" Column="82" />
+      <File FileName="Assets/Scripts/GameMain.boo" Line="1" Column="1" />
       <File FileName="Assets/Scripts/JailFactory.boo" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Players/PlayerBase.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Players/PlayerBase.boo" Line="62" Column="29" />
+      <File FileName="Assets/Scripts/Players/Megaman.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Players/Mario.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/EnemyBase.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Players/Link.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/EnemyMegaman.boo" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
