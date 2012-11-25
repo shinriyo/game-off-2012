@@ -1,5 +1,3 @@
-import UnityEngine
-
 class Mario (PlayerBase):
     def Awake():
         super.Awake()

@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\GameMain.boo" />
      <Compile Include="Assets\Scripts\HUD.boo" />
      <Compile Include="Assets\Scripts\JailFactory.boo" />
+     <Compile Include="Assets\Scripts\Players\Link.boo" />
      <Compile Include="Assets\Scripts\Players\Mario.boo" />
      <Compile Include="Assets\Scripts\Players\Megaman.boo" />
      <Compile Include="Assets\Scripts\Players\PlayerBase.boo" />

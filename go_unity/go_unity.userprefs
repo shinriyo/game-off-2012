@@ -8,7 +8,9 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Enemies" expanded="True" />
-                <Node name="JailFactory.boo" selected="True" />
+                <Node name="Players" expanded="True">
+                  <Node name="PlayerBase.boo" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
