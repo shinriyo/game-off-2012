@@ -53,8 +53,9 @@
      <Compile Include="Assets\Scripts\GameMain.boo" />
      <Compile Include="Assets\Scripts\HUD.boo" />
      <Compile Include="Assets\Scripts\JailFactory.boo" />
-     <Compile Include="Assets\Scripts\Plaers\Megaman.boo" />
-     <Compile Include="Assets\Scripts\Plaers\PlayerBase.boo" />
+     <Compile Include="Assets\Scripts\Players\Mario.boo" />
+     <Compile Include="Assets\Scripts\Players\Megaman.boo" />
+     <Compile Include="Assets\Scripts\Players\PlayerBase.boo" />
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
