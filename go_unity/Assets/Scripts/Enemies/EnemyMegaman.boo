@@ -1,6 +1,6 @@
 import UnityEngine
 
-class EnemyMegaman (MonoBehaviour):
+class EnemyMegaman (EnemyBase):
 
     def Start ():
         pass

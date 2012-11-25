@@ -14,6 +14,9 @@ class PlayerBase (MonoBehaviour):
     static final PULL as string = "Pull"
     static final PUSH as string = "Push"
 
+    def Awake ():
+        tag = "Player"
+
     def Start ():
         animation.Play(IDLE)
 
@@ -42,3 +45,7 @@ class PlayerBase (MonoBehaviour):
             animation.CrossFade(WALK)
         else:
             animation.CrossFade(IDLE)
+
+    def OnColliderEnter ( other as GameObject):
+        if other.tag == "Enemy" :
+            pass
