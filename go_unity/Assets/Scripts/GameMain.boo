@@ -28,6 +28,7 @@ class GameMain (MonoBehaviour):
         playerObj as GameObject = Instantiate(characterResourceArray[selectedIndex]);
         playerObj.AddComponent(playerComponentStringArray[selectedIndex])
         _characterTypeText.text = playerNameStringArray[selectedIndex]
+        playerObj.AddComponent[of Rigidbody]();
 
         # enemies
         transform.parent =  playerObj.transform
@@ -36,24 +37,29 @@ class GameMain (MonoBehaviour):
         enemy1Obj.AddComponent(enemyComponentStringArray[index])
         enemy1Obj.transform.localPosition = Vector3(-10, 0, 100)
         enemy1Obj.transform.eulerAngles = Vector3(0, 180, 0)
+        enemy1Obj.AddComponent[of HingeJoint]()
+        #enemy1Obj.AddComponent[of CapsuleCollider]()
 
         index = Random.Range(0, characterResourceArray.Length)
         enemy2Obj as GameObject = Instantiate(characterResourceArray[index])
         enemy2Obj.AddComponent(enemyComponentStringArray[index])
         enemy2Obj.transform.localPosition = Vector3(10, 0, 100)
         enemy2Obj.transform.eulerAngles = Vector3(0, 180, 0)
+        enemy2Obj.AddComponent[of HingeJoint]()
 
         index = Random.Range(0, characterResourceArray.Length)
         enemy3Obj as GameObject = Instantiate(characterResourceArray[index])
         enemy3Obj.AddComponent(enemyComponentStringArray[index])
         enemy3Obj.transform.localPosition = Vector3(20, 0, 100)
         enemy3Obj.transform.eulerAngles = Vector3(0, 180, 0)
+        enemy3Obj.AddComponent[of HingeJoint]()
 
         index = Random.Range(0, characterResourceArray.Length)
         enemy4Obj as GameObject = Instantiate(characterResourceArray[index])
         enemy4Obj.AddComponent(enemyComponentStringArray[index])
         enemy4Obj.transform.localPosition = Vector3(30, 0, 100)
         enemy4Obj.transform.eulerAngles = Vector3(0, 180, 0)
+        enemy4Obj.AddComponent[of HingeJoint]()
 
     def Start ():
         pass

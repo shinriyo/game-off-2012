@@ -6,9 +6,11 @@ class PlayerBase (MonoBehaviour):
     protected _hp as int
     protected _gravity as single
     protected _speed as single
+    protected _jumpSpeed as single
     protected _rotateSpeed as single
+    protected _controller as CharacterController
 
-    private moveDirection as Vector3 = Vector3.zero
+    protected _moveDirection as Vector3 = Vector3.zero
     static final IDLE as string = "Idle"
     static final WALK as string = "Walk"
     static final PULL as string = "Pull"
@@ -16,6 +18,7 @@ class PlayerBase (MonoBehaviour):
 
     def Awake ():
         tag = "Player"
+        _controller  = GetComponent(CharacterController)
 
     def Start ():
         animation.Play(IDLE)
@@ -27,9 +30,8 @@ class PlayerBase (MonoBehaviour):
         inputH as  bool = false
         inputV as bool = false
 
-        controller = GetComponent(CharacterController)
-        moveDirection = Vector3.zero
-        moveDirection.y -= _gravity * Time.deltaTime
+        _moveDirection = Vector3.zero
+        _moveDirection.y -= _gravity
 
         if Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.5:
             inputH = true
@@ -37,15 +39,24 @@ class PlayerBase (MonoBehaviour):
 
         if (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.5):
             inputV = true
-            moveDirection += transform.forward * Input.GetAxis("Vertical") * _speed
+            _moveDirection += transform.forward * Input.GetAxis("Vertical") * _speed
 
-        controller.Move(moveDirection * Time.deltaTime);
+        if Input.GetButton("Jump"):
+            Debug.Log("Jump")
+            _moveDirection.y = _jumpSpeed;
+
+        _controller.Move(_moveDirection * Time.deltaTime);
 
         if inputH or inputV:
             animation.CrossFade(WALK)
         else:
             animation.CrossFade(IDLE)
 
-    def OnColliderEnter ( other as GameObject):
-        if other.tag == "Enemy" :
-            pass
+    def OnCollisionEnter (collision as Collision):
+        Debug.Log("hit")
+        if collision.gameObject.tag == "Enemy" :
+            enemyJoint as HingeJoint = collision.gameObject.GetComponent(HingeJoint)
+            enemyJoint.connectedBody = rigidbody
+
+        if collision.gameObject.tag == "Floor" :
+            Debug.Log("Floor")
