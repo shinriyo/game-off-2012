@@ -102,3 +102,7 @@ class GameMain (MonoBehaviour):
             _messageText.text = "Game Over"
         else:
             _timerText.text = intVal.ToString()
+
+    def OnGUI ():
+        if GUI.Button(Rect(Screen.width/2, Screen.height/2 + 80, 50, 30), 'Click'):
+            pass
