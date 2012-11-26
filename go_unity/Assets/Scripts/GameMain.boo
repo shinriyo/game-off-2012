@@ -14,7 +14,6 @@ class GameMain (MonoBehaviour):
         _pointText = _hudObj.transform.Find("PointText").GetComponent[of GUIText]()
         _messageText = _hudObj.transform.Find("MessageText").GetComponent[of GUIText]()
         _characterTypeText = _hudObj.transform.Find("CharacterTypeText").GetComponent[of GUIText]()
-        _messageText.text = "Game Over"
         megamanPref as GameObject = (Resources.Load('Characters/megaman') as GameObject)
         marioPref as GameObject = (Resources.Load('Characters/mario') as GameObject)
         linkPref as GameObject = (Resources.Load('Characters/link') as GameObject)
@@ -40,7 +39,7 @@ class GameMain (MonoBehaviour):
         enemy1Obj.transform.eulerAngles = Vector3(0, 180, 0)
         enemy1Obj.AddComponent[of HingeJoint]()
         enemy1RB as Rigidbody = enemy1Obj.GetComponent[of Rigidbody]();
-        enemy1RB.freezeRotation = true
+        enemy1RB.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation
         enemy1Obj.AddComponent[of CapsuleCollider]()
 
         index = Random.Range(0, characterResourceArray.Length)
@@ -50,7 +49,7 @@ class GameMain (MonoBehaviour):
         enemy2Obj.transform.eulerAngles = Vector3(0, 180, 0)
         enemy2Obj.AddComponent[of HingeJoint]()
         enemy2RB as Rigidbody = enemy2Obj.GetComponent[of Rigidbody]();
-        enemy2RB.freezeRotation = true
+        enemy2RB.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation
         enemy2Obj.AddComponent[of CapsuleCollider]()
 
         index = Random.Range(0, characterResourceArray.Length)
@@ -60,7 +59,7 @@ class GameMain (MonoBehaviour):
         enemy3Obj.transform.eulerAngles = Vector3(0, 180, 0)
         enemy3Obj.AddComponent[of HingeJoint]()
         enemy3RB as Rigidbody = enemy3Obj.GetComponent[of Rigidbody]();
-        enemy3RB.freezeRotation = true
+        enemy3RB.constraints =RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation
         enemy3Obj.AddComponent[of CapsuleCollider]()
 
         index = Random.Range(0, characterResourceArray.Length)
@@ -70,11 +69,12 @@ class GameMain (MonoBehaviour):
         enemy4Obj.transform.eulerAngles = Vector3(0, 180, 0)
         enemy4Obj.AddComponent[of HingeJoint]()
         enemy4RB as Rigidbody = enemy4Obj.GetComponent[of Rigidbody]();
-        enemy4RB.freezeRotation = true
+        enemy4RB.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation
         enemy4Obj.AddComponent[of CapsuleCollider]()
 
     def Start ():
         pass
 
     def Update ():
-        pass
+        _messageText.text = "Game Clear"
+

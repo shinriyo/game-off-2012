@@ -70,5 +70,4 @@ class PlayerBase (MonoBehaviour):
             _onFloor = true
 
         elif hit.gameObject.tag == "Jail" :
-            Debug.Log("k")
             _arrestKeeper.PushJail()
