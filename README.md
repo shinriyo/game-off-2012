@@ -1,11 +1,12 @@
-## Game Title
+# About the Game
+### Game Title
 Keidoro
 
-Keidoro means "Keisatsu: in short, and "Dorobo" in short.
+Keidoro means "Keisatsu" in short, and "Dorobo" in short.
 Keisatsu means a policeman, and Dorobo means a thief.
 cops and robbers (hide-and-seek game)
 
-## Auther
+### Auther
 * Standard Assets: Copyright (c) 2010 UNITY Inc.
   (BGM and Terrain)
 * Programmer: shinriyo
@@ -14,17 +15,18 @@ cops and robbers (hide-and-seek game)
   (3D modeling and texture and rigging)
 * Character's voice: shinriyo
 
-## How to Play?
+### How to Play?
 
-## Megaman(super move)
+### Megaman(super move)
 Megabuster
 
-## Mario(super move)
+### Mario(super move)
 Jump
 
-## Link(super move)
+### Link(super move)
 Slash
 
+# Game off Document
 Here at GitHub, we're no strangers to hosting or sponsoring hackathons. With the growing number of games and game development resources on GitHub, we thought it was about time to throw our very own game jam!
 
 ## The Challenge
