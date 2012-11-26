@@ -3,7 +3,7 @@ import UnityEngine
 class GameMain (MonoBehaviour):
 
     public _hudObj as GameObject
-    private _arrestKeeper as ArrestKeeper
+    private MAX_ENEMY_COUNT as int = 4
     private _pointText as GUIText
     private _messageText as GUIText
     private _characterTypeText as GUIText
@@ -13,8 +13,8 @@ class GameMain (MonoBehaviour):
     private _isClear as bool
 
     def Awake ():
-        _arrestKeeper = ArrestKeeper()
         _pointText = _hudObj.transform.Find("PointText").GetComponent[of GUIText]()
+        _pointText.text = _point.ToString() + "/ " + MAX_ENEMY_COUNT.ToString()
         _messageText = _hudObj.transform.Find("MessageText").GetComponent[of GUIText]()
         _characterTypeText = _hudObj.transform.Find("CharacterTypeText").GetComponent[of GUIText]()
         _timerText = _hudObj.transform.Find("TimerText").GetComponent[of GUIText]()
@@ -83,12 +83,15 @@ class GameMain (MonoBehaviour):
     def Update ():
         arrestedEnemyCnt as int = 0
         for enemyObj as GameObject in GameObject.FindGameObjectsWithTag("Enemy"):
-            if enemyObj.GetComponent(HingeJoint).connectedBody:
+            arrestFlag as bool = enemyObj.GetComponent(EnemyBase).ArrestFlag
+            if arrestFlag:
                 arrestedEnemyCnt++
+                _point = arrestedEnemyCnt
+                _pointText.text = _point.ToString() + "/ " + MAX_ENEMY_COUNT.ToString()
 
         Debug.Log(arrestedEnemyCnt)
 
-        if _arrestKeeper.ArrestedEnemiesNum() == 4:
+        if arrestedEnemyCnt == MAX_ENEMY_COUNT:
             _messageText.text = "Game Clear"
 
         _timer -= Time.deltaTime

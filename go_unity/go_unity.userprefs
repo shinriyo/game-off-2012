@@ -1,26 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ArrestKeeper.boo">
-    <Files>
-      <File FileName="Assets/Scripts/GameMain.boo" Line="91" Column="50" />
-      <File FileName="Assets/Scripts/Players/PlayerBase.boo" Line="32" Column="9" />
-      <File FileName="Assets/Scripts/Players/Megaman.boo" Line="7" Column="23" />
-      <File FileName="Assets/Scripts/Players/Mario.boo" Line="7" Column="22" />
-      <File FileName="Assets/Scripts/Enemies/EnemyBase.boo" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Players/Link.boo" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemies/EnemyMegaman.boo" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ArrestKeeper.boo" Line="26" Column="29" />
-      <File FileName="Assets/Scripts/JailFactory.boo" Line="13" Column="50" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-Boo" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Enemies" expanded="True" />
+                <Node name="Enemies" expanded="True">
+                  <Node name="EnemyMario.boo" selected="True" />
+                </Node>
                 <Node name="Players" expanded="True" />
-                <Node name="ArrestKeeper.boo" selected="True" />
               </Node>
             </Node>
           </Node>

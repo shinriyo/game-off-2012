@@ -17,13 +17,10 @@ class PlayerBase (MonoBehaviour):
     static final JUMP as string = "Jump"
     static final PULL as string = "Pull"
     static final PUSH as string = "Push"
-    private _arrestKeeper as ArrestKeeper
-
 
     def Awake ():
         tag = "Player"
         _controller  = GetComponent(CharacterController)
-        _arrestKeeper = ArrestKeeper.Instance()
 
     def Start ():
         animation.Play(IDLE)
@@ -64,10 +61,21 @@ class PlayerBase (MonoBehaviour):
         if hit.gameObject.gameObject.tag == "Enemy" :
             enemyJoint as HingeJoint = hit.gameObject.GetComponent(HingeJoint)
             enemyJoint.connectedBody = rigidbody
-            _arrestKeeper.Register(hit.transform)
 
         elif hit.gameObject.tag == "Floor" :
             _onFloor = true
 
         elif hit.gameObject.tag == "Jail" :
-            _arrestKeeper.PushJail()
+            PushJail()
+
+    private def PushJail ():
+        for enemyObj as GameObject in GameObject.FindGameObjectsWithTag("Enemy"):
+            enemyTrans as Transform = enemyObj.transform
+            enemyJoint as HingeJoint = enemyTrans.GetComponent(HingeJoint)
+            # grubbed
+            if enemyJoint.connectedBody:
+                enemyObj.GetComponent(EnemyBase).ArrestFlag = true
+                enemyTrans.localPosition = Vector3(Random.Range(5, 13), 0, -Random.Range(5, 13))
+                enemyJoint.connectedBody = null
+
+        _arrestedEnemies = []
