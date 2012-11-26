@@ -23,7 +23,7 @@ class PlayerBase (MonoBehaviour):
     def Awake ():
         tag = "Player"
         _controller  = GetComponent(CharacterController)
-        _arrestKeeper = ArrestKeeper()
+        _arrestKeeper = ArrestKeeper.Instance()
 
     def Start ():
         animation.Play(IDLE)

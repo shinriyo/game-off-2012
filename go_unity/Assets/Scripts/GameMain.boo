@@ -7,13 +7,18 @@ class GameMain (MonoBehaviour):
     private _pointText as GUIText
     private _messageText as GUIText
     private _characterTypeText as GUIText
+    private _timerText as GUIText
     private _point as int
+    private _timer as single = 60
+    private _isClear as bool
 
     def Awake ():
         _arrestKeeper = ArrestKeeper()
         _pointText = _hudObj.transform.Find("PointText").GetComponent[of GUIText]()
         _messageText = _hudObj.transform.Find("MessageText").GetComponent[of GUIText]()
         _characterTypeText = _hudObj.transform.Find("CharacterTypeText").GetComponent[of GUIText]()
+        _timerText = _hudObj.transform.Find("TimerText").GetComponent[of GUIText]()
+
         megamanPref as GameObject = (Resources.Load('Characters/megaman') as GameObject)
         marioPref as GameObject = (Resources.Load('Characters/mario') as GameObject)
         linkPref as GameObject = (Resources.Load('Characters/link') as GameObject)
@@ -76,5 +81,20 @@ class GameMain (MonoBehaviour):
         pass
 
     def Update ():
-        _messageText.text = "Game Clear"
+        arrestedEnemyCnt as int = 0
+        for enemyObj as GameObject in GameObject.FindGameObjectsWithTag("Enemy"):
+            if enemyObj.GetComponent(HingeJoint).connectedBody:
+                arrestedEnemyCnt++
 
+        Debug.Log(arrestedEnemyCnt)
+
+        if _arrestKeeper.ArrestedEnemiesNum() == 4:
+            _messageText.text = "Game Clear"
+
+        _timer -= Time.deltaTime
+        intVal as int = _timer
+
+        if intVal < 0:
+            _messageText.text = "Game Over"
+        else:
+            _timerText.text = intVal.ToString()
