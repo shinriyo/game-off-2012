@@ -89,12 +89,13 @@ class GameMain (MonoBehaviour):
                 _point = arrestedEnemyCnt
                 _pointText.text = _point.ToString() + "/ " + MAX_ENEMY_COUNT.ToString()
 
-        Debug.Log(arrestedEnemyCnt)
-
         if arrestedEnemyCnt == MAX_ENEMY_COUNT:
+            _isClear = true
             _messageText.text = "Game Clear"
 
-        _timer -= Time.deltaTime
+        if not _isClear:
+            _timer -= Time.deltaTime
+
         intVal as int = _timer
 
         if intVal < 0:
