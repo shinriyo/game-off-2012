@@ -1,5 +1,10 @@
 import UnityEngine
 
+public enum EnemyState:
+    None
+    Search
+    Chase
+
 class EnemyBase (MonoBehaviour):
 
     protected _hp as int
@@ -11,11 +16,14 @@ class EnemyBase (MonoBehaviour):
     protected _onFloor as bool
 
     protected _moveDirection as Vector3 = Vector3.zero
-    static final IDLE as string = "Idle"
-    static final WALK as string = "Walk"
-    static final JUMP as string = "Jump"
-    static final PULL as string = "Pull"
-    static final PUSH as string = "Push"
+    private static final IDLE as string = "Idle"
+    private static final WALK as string = "Walk"
+    private static final JUMP as string = "Jump"
+    private static final PULL as string = "Pull"
+    private static final PUSH as string = "Push"
+
+    private targetTrans as Transform
+    private _myState as EnemyState
 
     [Property(ArrestFlag)]
     private _arrestFlag as bool
@@ -27,4 +35,9 @@ class EnemyBase (MonoBehaviour):
         pass
 
     def Update ():
-        pass
+        if _myState == EnemyState.Search:
+            enemies as (GameObject) = GameObject.FindGameObjectsWithTag("Enemy")
+            index as int = Random.Range(0, enemies.Length)
+            _myState = EnemyState.Chase
+        elif _myState == EnemyState.Chase:
+            pass

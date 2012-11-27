@@ -12,11 +12,11 @@ class PlayerBase (MonoBehaviour):
     protected _onFloor as bool
 
     protected _moveDirection as Vector3 = Vector3.zero
-    static final IDLE as string = "Idle"
-    static final WALK as string = "Walk"
-    static final JUMP as string = "Jump"
-    static final PULL as string = "Pull"
-    static final PUSH as string = "Push"
+    private static final IDLE as string = "Idle"
+    private static final WALK as string = "Walk"
+    private static final JUMP as string = "Jump"
+    private static final PULL as string = "Pull"
+    private static final PUSH as string = "Push"
 
     def Awake ():
         tag = "Player"

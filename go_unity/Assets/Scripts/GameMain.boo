@@ -3,7 +3,7 @@ import UnityEngine
 class GameMain (MonoBehaviour):
 
     public _hudObj as GameObject
-    private MAX_ENEMY_COUNT as int = 4
+    private static final MAX_ENEMY_COUNT as int = 4
     private _pointText as GUIText
     private _messageText as GUIText
     private _characterTypeText as GUIText
