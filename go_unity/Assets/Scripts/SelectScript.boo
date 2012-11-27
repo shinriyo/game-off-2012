@@ -6,6 +6,7 @@ class SelectScript (MonoBehaviour):
     private static BUTTON_HEIGHT as int = 160
     private static OFFSET as int = 30
     private static URL as string = "https://github.com/shinriyo/game-off-2012"
+    
     def Start ():
         megamanPref as GameObject = (Resources.Load('Characters/megaman') as GameObject)
         marioPref as GameObject = (Resources.Load('Characters/mario') as GameObject)

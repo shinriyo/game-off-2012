@@ -17,6 +17,12 @@ cops and robbers (hide-and-seek game)
 
 ### How to Play?
 
+1. Select your Character from 3 characters; Megaman, Mario, Link.
+
+2. Collide thieves, so Player pull them.
+
+3. Go to the jail, so Player push them onto jail.
+
 ### Megaman(super move)
 Megabuster
 
@@ -25,6 +31,22 @@ Jump
 
 ### Link(super move)
 Slash
+
+### Where is "The Challenge" in the game?
+* forking (or forks)
+"The Challenge" is one or more, so it doesn't include
+
+* branching (or branches)
+When policeman grab the thieves, it looks like branches isn't it?
+
+* cloning (or clones)
+Cloned from 3 game characters.
+
+* pushing
+When thieves go into jail
+
+* pulling
+When policeman grab the thieves
 
 # Game off Document
 Here at GitHub, we're no strangers to hosting or sponsoring hackathons. With the growing number of games and game development resources on GitHub, we thought it was about time to throw our very own game jam!

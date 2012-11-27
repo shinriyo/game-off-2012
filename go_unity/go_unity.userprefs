@@ -1,15 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SelectScript.boo">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameMain.boo">
     <Files>
-      <File FileName="Assets/Scripts/GameMain.boo" Line="105" Column="1" />
-      <File FileName="Assets/Scripts/Players/PlayerBase.boo" Line="26" Column="28" />
+      <File FileName="Assets/Scripts/GameMain.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Players/PlayerBase.boo" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Players/Mario.boo" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Players/Link.boo" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemies/EnemyMegaman.boo" Line="1" Column="1" />
       <File FileName="Assets/Scripts/JailFactory.boo" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SelectedCharacter.boo" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/SelectScript.boo" Line="40" Column="40" />
+      <File FileName="Assets/Scripts/SelectedCharacter.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SelectScript.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/EnemyBase.boo" Line="43" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +19,7 @@
               <Node name="Scripts" expanded="True">
                 <Node name="Enemies" expanded="True" />
                 <Node name="Players" expanded="True" />
-                <Node name="SelectScript.boo" selected="True" />
+                <Node name="GameMain.boo" selected="True" />
               </Node>
             </Node>
           </Node>

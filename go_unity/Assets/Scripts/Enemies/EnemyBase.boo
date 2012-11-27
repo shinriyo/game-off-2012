@@ -32,9 +32,11 @@ class EnemyBase (MonoBehaviour):
         tag = "Enemy"
 
     def Start ():
-        pass
+        animation.Play(IDLE)
 
     def Update ():
+        #animation.Play(IDLE)
+
         if _myState == EnemyState.Search:
             enemies as (GameObject) = GameObject.FindGameObjectsWithTag("Enemy")
             index as int = Random.Range(0, enemies.Length)
