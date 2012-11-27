@@ -7,10 +7,9 @@
           <Node name="Assembly-Boo" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Enemies" expanded="True">
-                  <Node name="EnemyMario.boo" selected="True" />
-                </Node>
+                <Node name="Enemies" expanded="True" />
                 <Node name="Players" expanded="True" />
+                <Node name="SelectScript.boo" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -19,7 +18,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/sugita/game-off-2012/go_unity/Assets/Scripts/GameMain.boo" line="88" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
