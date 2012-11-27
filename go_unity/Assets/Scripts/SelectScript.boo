@@ -2,6 +2,10 @@ import UnityEngine
 
 class SelectScript (MonoBehaviour):
 
+    private static BUTTON_WIDTH as int = 200
+    private static BUTTON_HEIGHT as int = 160
+    private static OFFSET as int = 30
+
     def Start ():
         megamanPref as GameObject = (Resources.Load('Characters/megaman') as GameObject)
         marioPref as GameObject = (Resources.Load('Characters/mario') as GameObject)
@@ -24,3 +28,15 @@ class SelectScript (MonoBehaviour):
 
     def Update ():
         pass
+
+    def OnGUI ():
+
+        if GUI.Button(Rect(OFFSET, Screen.height/2+80, BUTTON_WIDTH, BUTTON_HEIGHT), 'Megaman'):
+            pass
+
+        if GUI.Button(Rect(Screen.width/2 - BUTTON_WIDTH/2, Screen.height/2 + 80, BUTTON_WIDTH, BUTTON_HEIGHT), 'Mario'):
+            pass
+
+        if GUI.Button(Rect(Screen.width - OFFSET - BUTTON_WIDTH, Screen.height/2 + 80, BUTTON_WIDTH, BUTTON_HEIGHT), 'Link'):
+            pass
+
