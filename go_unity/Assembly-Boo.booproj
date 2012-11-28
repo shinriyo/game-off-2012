@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyMario.boo" />
      <Compile Include="Assets\Scripts\Enemies\EnemyMegaman.boo" />
      <Compile Include="Assets\Scripts\GameMain.boo" />
+     <Compile Include="Assets\Scripts\GameManager.boo" />
      <Compile Include="Assets\Scripts\HUD.boo" />
      <Compile Include="Assets\Scripts\JailFactory.boo" />
      <Compile Include="Assets\Scripts\Players\Link.boo" />

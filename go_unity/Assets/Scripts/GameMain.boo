@@ -1,4 +1,5 @@
 import UnityEngine
+import Boo.Lang.PatternMatching
 
 class GameMain (MonoBehaviour):
 
@@ -28,7 +29,17 @@ class GameMain (MonoBehaviour):
         enemyComponentStringArray as (string) = array(string, ("EnemyMegaman", "EnemyMario", "EnemyLink"))
 
         # player
-        selectedIndex as int = Random.Range(0, 3)
+        selectedIndex as int
+        match GameManager.selectedCharacter:
+            case MyCharacter.MEGAMAN:
+                selectedIndex = 0
+            case MyCharacter.MARIO:
+                selectedIndex = 1
+            case MyCharacter.LINK:
+                selectedIndex = 2
+            otherwise:
+               print "what?"
+               
         playerObj as GameObject = Instantiate(characterResourceArray[selectedIndex]);
         playerObj.AddComponent(playerComponentStringArray[selectedIndex])
         _characterTypeText.text = playerNameStringArray[selectedIndex]
