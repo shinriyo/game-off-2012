@@ -64,18 +64,25 @@ class PlayerBase (MonoBehaviour):
             animation.CrossFade(IDLE)
 
     def OnControllerColliderHit (hit as ControllerColliderHit):
-        if hit.gameObject.gameObject.tag == "Enemy" :
+        hitObj as GameObject = hit.gameObject
+        hitObjTag as string = hitObj.tag
+        if hitObjTag == "Enemy" :
             enemyJoint as HingeJoint = hit.gameObject.GetComponent(HingeJoint)
             if enemyJoint.connectedBody == null:
                 enemyJoint.connectedBody = rigidbody
                 audio.clip = _getyouSound
                 audio.Play()
 
-        elif hit.gameObject.tag == "Floor" :
+        elif hitObjTag == "Floor" :
             _onFloor = true
 
-        elif hit.gameObject.tag == "Jail" :
+        elif hitObjTag == "Jail" :
             PushJail()
+
+        elif hitObjTag == "Item" :
+            Destroy(hitObj);
+            _speed += 10
+            _rotateSpeed += 10
 
     private def PushJail ():
         cnt as int = 0

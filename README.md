@@ -23,6 +23,10 @@ cops and robbers (hide-and-seek game)
 
 3. Go to the jail, so Player push them onto jail.
 
+#### Item :diamonds:
+All of item improve character's move and rotate speed.
+Same effectiveness :stuck_out_tongue_closed_eyes:
+
 ### Megaman(super move)
 Megabuster
 
