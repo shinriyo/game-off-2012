@@ -3,17 +3,17 @@
 Keidoro
 
 Keidoro means "Keisatsu" in short, and "Dorobo" in short.
-Keisatsu means a policeman, and Dorobo means a thief.
+Keisatsu means a policeman :police_car:, and Dorobo means a thief.
 cops and robbers (hide-and-seek game)
 
 ### Auther
 * Standard Assets: Copyright (c) 2010 UNITY Inc.
-  (BGM of Penelope and Terrain and Building models)
-* Programmer: shinriyo
-* Planner: shinriyo
-* 3D art directer: shinriyo
+  (BGM of Penelope and Terrain and Building models) :hankey:
+* Programmer: shinriyo :neckbeard:
+* Planner: shinriyo :sunglasses:
+* 3D art directer: shinriyo :angel:
   (3D modeling and texture and rigging)
-* Character's voice: shinriyo (my voice witch modified by Audacity )
+* Character's voice: shinriyo (my voice witch modified by Audacity :musical_note:)
 
 ### How to Play?
 
