@@ -5,12 +5,13 @@ class GameMain (MonoBehaviour):
 
     public _hudObj as GameObject
     private static final MAX_ENEMY_COUNT as int = 4
+    private static final MAX_TIMER_COUNT as int = 140
     private _pointText as GUIText
     private _messageText as GUIText
     private _characterTypeText as GUIText
     private _timerText as GUIText
     private _point as int
-    private _timer as single = 60
+    private _timer as single = MAX_TIMER_COUNT
     private _isClear as bool
 
     def Awake ():
@@ -104,6 +105,9 @@ class GameMain (MonoBehaviour):
             _isClear = true
             _messageText.text = "Game Clear"
 
+        if not _isClear and _timer < MAX_TIMER_COUNT - 1:
+            _messageText.text = string.Empty
+
         if not _isClear:
             _timer -= Time.deltaTime
 
@@ -115,5 +119,6 @@ class GameMain (MonoBehaviour):
             _timerText.text = intVal.ToString()
 
     def OnGUI ():
-        if GUI.Button(Rect(Screen.width/2, Screen.height/2 + 80, 50, 30), 'Click'):
-            pass
+        if _isClear:
+            if GUI.Button(Rect(Screen.width/2, Screen.height/2 + 80, 150, 130), 'Click'):
+                Application.LoadLevel(0)

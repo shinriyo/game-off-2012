@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Gem Rendering\Example\GemSpawner.cs" />
+     <None Include="Assets\Font\04b31\readme.txt" />
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />

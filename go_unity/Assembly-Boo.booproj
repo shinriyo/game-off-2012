@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Players\PlayerBase.boo" />
      <Compile Include="Assets\Scripts\SelectScript.boo" />
      <Compile Include="Assets\Scripts\SelectedCharacter.boo" />
+     <None Include="Assets\Font\04b31\readme.txt" />
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />

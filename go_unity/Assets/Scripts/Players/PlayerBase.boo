@@ -17,10 +17,16 @@ class PlayerBase (MonoBehaviour):
     private static final JUMP as string = "Jump"
     private static final PULL as string = "Pull"
     private static final PUSH as string = "Push"
+    private _getyouSound as AudioClip
+    private _arrestSound as AudioClip
 
     def Awake ():
+        _getyouSound = (Resources.Load('Audio/getyou') as AudioClip)
+        _arrestSound = (Resources.Load('Audio/sfx-deposit') as AudioClip)
+
         tag = "Player"
         _controller  = GetComponent(CharacterController)
+        gameObject.AddComponent('AudioSource')
 
     def Start ():
         animation.Play(IDLE)
@@ -60,7 +66,10 @@ class PlayerBase (MonoBehaviour):
     def OnControllerColliderHit (hit as ControllerColliderHit):
         if hit.gameObject.gameObject.tag == "Enemy" :
             enemyJoint as HingeJoint = hit.gameObject.GetComponent(HingeJoint)
-            enemyJoint.connectedBody = rigidbody
+            if enemyJoint.connectedBody == null:
+                enemyJoint.connectedBody = rigidbody
+                audio.clip = _getyouSound
+                audio.Play()
 
         elif hit.gameObject.tag == "Floor" :
             _onFloor = true
@@ -69,6 +78,7 @@ class PlayerBase (MonoBehaviour):
             PushJail()
 
     private def PushJail ():
+        cnt as int = 0
         for enemyObj as GameObject in GameObject.FindGameObjectsWithTag("Enemy"):
             enemyTrans as Transform = enemyObj.transform
             enemyJoint as HingeJoint = enemyTrans.GetComponent(HingeJoint)
@@ -77,5 +87,8 @@ class PlayerBase (MonoBehaviour):
                 enemyObj.GetComponent(EnemyBase).ArrestFlag = true
                 enemyTrans.localPosition = Vector3(Random.Range(5, 13), 0, -Random.Range(5, 13))
                 enemyJoint.connectedBody = null
+                cnt+=1
+        if cnt > 0:
+            audio.clip = _arrestSound
+            audio.Play()
 
-        _arrestedEnemies = []
