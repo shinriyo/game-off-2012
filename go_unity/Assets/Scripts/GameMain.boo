@@ -13,6 +13,7 @@ class GameMain (MonoBehaviour):
     private _point as int
     private _timer as single = MAX_TIMER_COUNT
     private _isClear as bool
+    private _isGameOver as bool
 
     def Awake ():
         _pointText = _hudObj.transform.Find("PointText").GetComponent[of GUIText]()
@@ -114,11 +115,12 @@ class GameMain (MonoBehaviour):
         intVal as int = _timer
 
         if intVal < 0:
+            _isGameOver = true
             _messageText.text = "Game Over"
         else:
             _timerText.text = intVal.ToString()
 
     def OnGUI ():
-        if _isClear:
+        if _isClear or _isGameOver:
             if GUI.Button(Rect(Screen.width/2, Screen.height/2 + 80, 150, 130), 'Click'):
                 Application.LoadLevel(0)
