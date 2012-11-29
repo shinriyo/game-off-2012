@@ -8,12 +8,12 @@ cops and robbers (hide-and-seek game)
 
 ### Auther
 * Standard Assets: Copyright (c) 2010 UNITY Inc.
-  (BGM and Terrain)
+  (BGM of Penelope and Terrain and Building models)
 * Programmer: shinriyo
 * Planner: shinriyo
 * 3D art directer: shinriyo
   (3D modeling and texture and rigging)
-* Character's voice: shinriyo
+* Character's voice: shinriyo (my voice witch modified by Audacity )
 
 ### How to Play?
 

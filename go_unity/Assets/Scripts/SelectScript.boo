@@ -3,6 +3,7 @@ import System.Collections
 
 class SelectScript (MonoBehaviour):
 
+    public selectedSound as AudioClip
     public letsgoSound as AudioClip
     private static BUTTON_WIDTH as int = 200
     private static BUTTON_HEIGHT as int = 160
@@ -49,7 +50,11 @@ class SelectScript (MonoBehaviour):
             StartCoroutine(GoGameScene())
 
     def GoGameScene () as IEnumerator:
+        audio.clip = selectedSound
+        audio.Play()
+        yield WaitForSeconds(1.5F)
         audio.clip = letsgoSound
         audio.Play()
         yield WaitForSeconds(1)
+
         Application.LoadLevel(1)

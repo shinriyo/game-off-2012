@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyLink.boo" />
      <Compile Include="Assets\Scripts\Enemies\EnemyMario.boo" />
      <Compile Include="Assets\Scripts\Enemies\EnemyMegaman.boo" />
+     <Compile Include="Assets\Scripts\FacadeFactory.boo" />
      <Compile Include="Assets\Scripts\GameMain.boo" />
      <Compile Include="Assets\Scripts\GameManager.boo" />
      <Compile Include="Assets\Scripts\HUD.boo" />
