@@ -1,15 +1,26 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemies/EnemyBase.boo">
+    <Files>
+      <File FileName="Assets/Scripts/Players/PlayerBase.boo" Line="31" Column="14" />
+      <File FileName="Assets/Scripts/Players/Link.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.boo" Line="14" Column="47" />
+      <File FileName="Assets/Scripts/Players/Megaman.boo" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameMain.boo" Line="118" Column="30" />
+      <File FileName="Assets/Scripts/Enemies/EnemyBase.boo" Line="43" Column="36" />
+      <File FileName="Assets/Scripts/Enemies/EnemyLink.boo" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/EnemyMegaman.boo" Line="10" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-Boo" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Enemies" expanded="True" />
+                <Node name="Enemies" expanded="True">
+                  <Node name="EnemyBase.boo" selected="True" />
+                </Node>
                 <Node name="Players" expanded="True" />
-                <Node name="GameMain.boo" selected="True" />
               </Node>
             </Node>
           </Node>

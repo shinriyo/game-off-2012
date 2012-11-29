@@ -22,7 +22,7 @@ class EnemyBase (MonoBehaviour):
     private static final PULL as string = "Pull"
     private static final PUSH as string = "Push"
 
-    private targetTrans as Transform
+    private _targetTrans as Transform
     private _myState as EnemyState
 
     [Property(ArrestFlag)]
@@ -38,8 +38,11 @@ class EnemyBase (MonoBehaviour):
         #animation.Play(IDLE)
 
         if _myState == EnemyState.Search:
-            enemies as (GameObject) = GameObject.FindGameObjectsWithTag("Enemy")
-            index as int = Random.Range(0, enemies.Length)
+            avoidObj as GameObject = GameObject.FindGameObjectWithTag("Player")
+            targetObj as GameObject = GameObject.FindGameObjectWithTag("Jail")
+            _targetTrans = avoidObj.transform
             _myState = EnemyState.Chase
         elif _myState == EnemyState.Chase:
-            pass
+            vec as Vector3 = (_targetTrans.localPosition - transform.localPosition).normalized
+            vec.y = 0
+            transform.localPosition += vec * _speed
